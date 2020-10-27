@@ -22,6 +22,18 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          'file-loader'
+        ]
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          'url-loader'
+        ]
       }
     ]
   },
